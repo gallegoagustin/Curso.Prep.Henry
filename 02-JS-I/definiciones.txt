@@ -1,0 +1,9 @@
+// Variables: son atributos que se definen para poder ser usados posteriormente. Existen de diferentes tipos, cada uno con diferentes características. Las 'var' son las que se usan más comunmente, las 'let' no tanto, y permiten definir scopes, y finalmente las 'const' que no pueden ser modificadas una vez definidas.
+
+// Strings: es cualquier conjunto de caracteres delimitados entre comillas. No son números, por lo que hay que prestar atención a la hora de realizar operaciones con ellos.
+
+// Funciones (argumentos, `return`): es un código que nos permite realizar una acción/serie de acciones, en función de ciertos criterios que queramos tener en cuenta. Facilita la tarea, ya que da la posibilidad no tener que repetir numerosas veces un mismo código.
+
+// Declaraciones `if`: se utiliza para indicarle a la función un criterio que debe tener en cuenta y en función del cual puede cambiar el resultado que devolvamos.
+
+// Valores booleanos (`true`, `false`): son un tipo de datos que permite distinguir entre dos conjuntos (verdaderos y falsos) con los que se pueden realizar diversas funciones.
