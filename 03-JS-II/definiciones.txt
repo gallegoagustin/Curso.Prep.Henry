@@ -1,0 +1,7 @@
+// for: operación mediante la cual expresamos todas las condiciones para las que queremos que se aplique una función.
+
+// &&: nos permite indicarle a una operación que queremos que se cumpla más de una condiciones obligatoriamente para poder realizar una función. Condiciones necesarias.
+
+// ||: nos permite indicarle a una operación que queremos que se cumpla una de las condiciones obligatoriamente para poder realizar una función. Condiciones suficientes.
+
+// !: le indica a una igualdad la negación de la misma.
