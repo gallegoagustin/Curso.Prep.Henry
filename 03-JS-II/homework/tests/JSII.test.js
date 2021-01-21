@@ -169,10 +169,10 @@ describe('esPrimo(num)', function() {
 
 describe ('esVerdadero(valor)', function() {
   it('should return true if valor is true', function() {
-    expect(esVerdadero(true)).toBe(true);
+    expect(esVerdadero(true)).toBe('Soy verdadero');
   });
   it('should return false if valor is false', function() {
-    expect(esVerdadero(false)).toBe(false);
+    expect(esVerdadero(false)).toBe('Soy falso');
   });
 });
 
