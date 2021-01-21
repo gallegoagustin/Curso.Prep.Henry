@@ -1,0 +1,1 @@
+// Arrays: son conjuntos de datos sobre los que podemos realizar diferentes operaciones o recuperar determinada información. Existen diversas herramientas para agregar, quitar, mostrar o numerar los datos dentro del conjunto.
