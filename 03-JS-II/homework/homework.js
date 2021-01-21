@@ -74,8 +74,18 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
-
+  switch (color) {
+    case 'blue': return 'This is blue'
+    break;
+    case 'red': return 'This is red'
+    break;
+    case 'green': return 'This is green'
+    break;
+    case 'orange': return 'This is orange'
+    default: return 'Color not found'
+  }
 }
+
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
@@ -165,7 +175,18 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-}
+  for (var i = 2; i < numero; i++) {
+    if (numero % i != 0) {
+      return true
+    }
+    else if (numero == 0 || numero ==1) {
+      return false
+    }
+    else {
+      return false
+    }
+  }
+}  
 
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
