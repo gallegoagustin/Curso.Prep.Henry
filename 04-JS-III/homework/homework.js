@@ -131,6 +131,8 @@ function multiplicarArgumentos() {
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
 
+  return (arguments*arguments)
+
 }
 
 
@@ -177,7 +179,14 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  
+
+  var ref = n.toString();
+
+  if(ref.indexOf('9') == 0) {
+    return true
+  }
+
+  return false
 }
 
 
@@ -203,23 +212,8 @@ function mesesDelAño(array) {
   //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
-  // Tu código:
+  // Tu código
 
-  var i = 0;
-
-  var resultado = [];
-
-  for(i = 0; i < array.length; i++)
-
-    if(array.indexOf('Enero') >= 0 && array.indexOf('Marzo') >= 0 && array.indexOf('Noviembre') >= 0) {
-      resultado.push('Enero');
-      resultado.push('Marzo');
-      resultado.push('Noviembre');
-    }
-
-    resultado.push('No se encontraron los meses pedidos');
-
-    return resultado.slice()
 }
 
 
@@ -227,6 +221,17 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
+
+  var i = 0;
+
+  var lista = []
+
+  for(i = 0; i < array.length; i++)
+
+    if(array[i] > 100) {
+      lista.push(array[i]);
+    } 
+  return lista.slice()
 }
 
 
