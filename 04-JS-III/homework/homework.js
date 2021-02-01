@@ -243,6 +243,40 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+
+  var i = 0;
+
+  var resultado = 0;
+
+  const ref = 2;
+
+  var lista = []
+
+  var error = []
+
+  for(i = 0; i < 11; i++) {
+
+      resultado = numero + ref * i;
+
+      lista.push(resultado);
+
+    if(resultado = i) {
+
+      error.push(true);
+      
+      break;
+    
+    }  
+
+  }
+
+  if(error[0] == true) {
+
+    return "Se interrumpió la ejecución"
+  }
+
+  return lista.slice()
+
 }
 
 
@@ -253,6 +287,31 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+
+  var i = 0;
+
+  var resultado = 0;
+
+  const ref = 2;
+
+  var lista = []
+
+  for(i = 0; i < 11; i++) {
+
+      resultado = numero + ref * i;
+
+      lista.push(resultado);
+
+    if(i = 5) {
+      
+      continue;
+    
+    }  
+
+  }
+
+  return lista.slice()
+
 }
 
 
