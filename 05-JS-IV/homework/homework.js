@@ -1,4 +1,4 @@
-// No cambies los nombres de las funciones.
+// No cambies los nombres de las funciones
 
 function crearGato(nombre, edad) {
   // Crear un nuevo objeto con la propiedad "nombre" y el valor definido como el argumento "nombre".
@@ -6,6 +6,23 @@ function crearGato(nombre, edad) {
   // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
   // Devuelve el objeto
   // Tu código:
+
+  var p1 = nombre;
+
+  var p2 = edad;
+
+  var gato = {
+
+    nombre: p1,
+    edad: p2,
+    meow: function() {
+      return 'Meow!'
+    }
+
+  }
+
+  return gato;
+
 }
 
 
@@ -14,6 +31,13 @@ function agregarPropiedad(objeto, property) {
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
+
+  var p1 = property;
+
+  objeto[p1] = null;
+
+  return objeto;
+
 }
 
 function invocarMetodo(objeto, metodo) {
@@ -21,6 +45,11 @@ function invocarMetodo(objeto, metodo) {
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
   // Tu código:
+
+  var ref = metodo;
+
+  objeto[ref]();
+
 }
 
 function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
@@ -28,12 +57,27 @@ function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
 
+  var resultado = 0;
+
+  var numero = objetoMisterioso.numeroMisterioso;
+
+  resultado = resultado + numero * 5;
+
+  return resultado;
+
 }
 
 function eliminarPropiedad(objeto, propiedad) {
   // Elimina la propiedad "propiedad" de "objeto"
   // Devuelve el objeto
   // Tu código:
+
+  var ref = propiedad;
+
+  delete objeto[ref];
+
+  return objeto;
+
 }
 
 function nuevoUsuario(nombre, email, password) {
@@ -41,12 +85,34 @@ function nuevoUsuario(nombre, email, password) {
   // Devuelve el objeto
   // Tu código:
 
+  var p1 = nombre;
+
+  var p2 = email;
+
+  var p3 = password;
+
+  var user = {
+    nombre: p1,
+    email: p2,
+    password: p3,
+  }
+
+  return user;
+
 }
 
 function tieneEmail(usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
+
+  var ref = usuario.email;
+
+  if(ref != null) {
+    return true
+  }
+
+  return false
 }
 
 
@@ -55,6 +121,7 @@ function tienePropiedad(objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
+
 }
 
 function verificarPassword(usuario, password) {
@@ -62,12 +129,28 @@ function verificarPassword(usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // // Tu código:
+
+  var ref = usuario['password'];
+
+  if(ref == password) {
+
+    return true
+
+  }
+
+  return false;
+
 }
 
 function actualizarPassword(usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevagPassword"
   // Devuelve el objeto
   // Tu código:
+
+  usuario.password = nuevaPassword;
+
+  return usuario;
+
 }
 
 function agregarAmigo(usuario, nuevoAmigo) {
@@ -75,12 +158,16 @@ function agregarAmigo(usuario, nuevoAmigo) {
   // Agrega "nuevoAmigo" al final de ese array
   // Devuelve el objeto "usuario"
   // // Tu código:
+
+  usuario['amigos'].push(nuevoAmigo);
+
+  return usuario;
+
 }
 
 function pasarUsuarioAPremium(usuarios) {
   // "usuarios" es un array de objetos "usuario"
   // Cada objeto "usuario" tiene la propiedad "esPremium"
-  // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
 }
