@@ -1,0 +1,23 @@
+<style>
+	h1 {
+		color: lightgray;
+	}
+	h3 {
+		color: fuchsia;
+	}
+	#spanId {
+		font-size: 18px;
+		margin: 50px;
+	}
+	#thirdDiv {
+		height: 600px;
+		width: 500px;
+		background-color: lightsteelblue;
+		padding: 50px;
+		border: 5px solid darkgreen;
+	}
+	img {
+		width: 400px;
+		height: 300px;
+	}	
+</style>
